@@ -4503,6 +4503,7 @@ if (
 
         let chance = effect.chance;
         if (attacker.ability === 'てんのめぐみ') chance *= 2;
+        if (attacker.ability === 'かれないはな') chance *= 2;
 
         if (Math.random() * 100 < chance) {
 
