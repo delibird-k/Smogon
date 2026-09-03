@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/png" href="master-ball.png">
-    <title>スモゴンバトル1v1</title>
+      <link rel="icon" type="image/png" href="109.png">
+    <title>ポケモンバトル1v1</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -494,6 +494,18 @@ surrenderButton.onclick = () => {
         Archaludon: { name: "ブリジュラス", id: "archaludon", types: ["はがね", "ドラゴン"], baseHp: 90, baseAttack: 105, baseDefense: 130, baseSpAttack: 125, baseSpDefense: 65, baseSpeed: 85, ability: "がんじょう",evs: { hp: 4, atk: 0, def: 0, spa: 252, spd: 0, spe: 252 },ai:"aggressive",nature: "ひかえめ", moves: [{ name: "りゅうせいぐん", power: 130, pp: 5, type: "ドラゴン", category: "special", accuracy: 90, self: { stats: [{effect: 'stat', stat: 'spAttack', stage: -2}]} }, { name: "ラスターカノン", power: 80, pp: 10, type: "はがね", category: "special", accuracy: 100, secondary: { chance: 10, effect: 'stat', stat: 'spDefense', stage: -1 } }, { name: "10まんボルト", power: 90, pp: 15, type: "でんき", category: "special", accuracy: 100, secondary: { chance: 10, effect: 'status', status: 'paralyze' } }, { name: "はどうだん", power: 80, pp: 20, type: "かくとう", category: "special", accuracy: 101}] },
         RagingBolt: { name: "タケルライコ", id: "ragingbolt", types: ["でんき", "ドラゴン"], baseHp: 125, baseAttack: 73, baseDefense: 91, baseSpAttack: 137, baseSpDefense: 89, baseSpeed: 75, ability: "こだいかっせい",evs: { hp: 228, atk: 0, def: 36, spa: 236, spd: 4, spe: 0},ai:"aggressive",nature: "ひかえめ", moves: [{ name: "りゅうせいぐん", power: 130, pp: 5, type: "ドラゴン", category: "special", accuracy: 90, self: { stats: [{effect: 'stat', stat: 'spAttack', stage: -2}]} },{ name: "10まんボルト", power: 90, pp: 15, type: "でんき", category: "special", accuracy: 100, secondary: { chance: 10, effect: 'status', status: 'paralyze' } }, { name: "じんらい", power: 70, pp: 5, type: "でんき", category: "special", accuracy: 100, priority: 1 }, { name: "めざめるパワー氷", power: 60, pp: 10, type: "こおり", category: "special", accuracy: 100 }] },
         トレーニング: { name: "トレーニング", id: "substitute" , types: ["トレーニング"],baseHp: 100, baseAttack: 1, baseDefense: 100, baseSpAttack: 1, baseSpDefense: 100, baseSpeed: 1, ability: "トレーニング", evs: { hp: 252, atk: 252, def: 252, spa: 252, spd: 252, spe: 252 },  ai: "aggressive",nature: "がんばりや",moves:[{name: "ぜんかいふく", type: "ノーマル", pp: 1000, category: "status", accuracy: 100,priority: -1 }]},
+        Cawmodore: { name: "カーモドール", id: "cawmodore", types: ["はがね", "ひこう"], baseHp: 50, baseAttack: 92, baseDefense: 130, baseSpAttack: 65, baseSpDefense: 75, baseSpeed: 118, ability: "コンデンサー",evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 4, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "でんじこう", power: 80, pp: 10, type: ["はがね","でんき"], category: "physical", accuracy: 100 ,priority:2, secondary: { chance: 50, effect: 'status', status: 'paralyze' }},{ name: "ブレイブバード", power: 120, pp: 8, type: "ひこう", category: "physical", accuracy: 100 },{ name: "ドレインパンチ", power: 75, pp: 15, type: "かくとう", category: "physical", accuracy: 100 }, { name: "つるぎのまい", type: "ノーマル", pp: 20, category: "status", accuracy: 101 }] },
+        Chromera: { name: "クロメラ", id: "chromera", types: ["あく", "ノーマル"], baseHp: 85, baseAttack: 85, baseDefense: 115, baseSpAttack: 115, baseSpDefense: 100, baseSpeed: 100, ability: "れいたい",evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252},ai:"aggressive",nature: "ひかえめ", moves: [{ name: "ミイラしばり", power: 100, pp: 8, type: ["あく","ゴースト"], category: "special", accuracy: 95 , secondary: { chance: 30, effect: 'flinch' }},{ name: "ばくおんぱ", power: 140, pp: 8, type: "ノーマル", category: "special", accuracy: 100 },{ name: "れいとうビーム", power: 90, pp: 15, type: "こおり", category: "special", accuracy: 100 ,secondary: { chance: 20, effect: 'status', status: 'freeze' }}, { name: "めいそう", type: "エスパー", pp: 20, category: "status", accuracy: 101 }] },
+        Crucibelle: { name: "クルシブル", id: "crucibelle", types: ["いわ", "どく"], baseHp: 106, baseAttack: 105, baseDefense: 65, baseSpAttack: 75, baseSpDefense: 85, baseSpeed: 104, ability: "かたいつぼ",evs: { hp: 4, atk: 252, def: 0, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "ポイズンキラー", power: 100, pp: 10, type: ["どく","いわ"], category: "physical", accuracy: 100 ,secondary: { chance: 100, effect: 'status', status: 'toxic' }},{ name: "ストーンエッジ", power: 100, pp: 5, type: "いわ", category: "physical", accuracy: 80, critPriority: 1 }, { name: "ふいうち", power: 70, pp: 5, type: "あく", category: "physical", accuracy: 100, priority: 1, isContact: true}, { name: "のろい", type: "ゴースト", pp: 20, category: "status", accuracy: 101 }] },
+        Equilibra: { name: "エキリブラ", id: "equilibra", types: ["はがね", "じめん"], baseHp: 102, baseAttack: 50, baseDefense: 96, baseSpAttack: 133, baseSpDefense: 118, baseSpeed: 60, ability: "ふゆう",evs: { hp: 252, atk: 0 , def: 4, spa: 252, spd: 0, spe: 0},ai:"aggressive",nature: "ひかえめ", moves: [{ name: "てんびんのさいだん", power: 100, pp: 10, type: ["はがね","エスパー"], category: "special", accuracy: 100 },{ name: "だいちのちから", power: 90, pp: 10, type: "じめん", category: "special", accuracy: 100,secondary: { chance: 10, effect: 'stat', stat: 'spDefense', stage: -1 } }, { name: "でんじは", type: "でんき", pp: 20, category: "status", accuracy: 90 }, { name: "めいそう", type: "エスパー", pp: 20, category: "status", accuracy: 101 }] },
+        Kitsunoh: { name: "キツノー", id: "kitsunoh", types: ["ゴースト", "はがね"], baseHp: 80, baseAttack: 103, baseDefense: 85, baseSpAttack: 55, baseSpDefense: 80, baseSpeed: 120, ability: "ふたつのたましい",evs: { hp: 4, atk: 252, def: 0, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "シャドーストライク", power: 80, pp: 100, type: "ゴースト", category: "physical", accuracy: 100,secondary: { chance: 50, effect: 'stat', stat: 'defense', stage: -1 }},{name: "アイアンヘッド", type: "はがね", category: "physical", power: 80, pp: 15, accuracy: 100, isContact: true, secondary: {chance: 30, effect: 'flinch'}},  { name: "インファイト", power: 120, pp: 5, type: "かくとう", category: "physical", accuracy: 100, isContact: true, self: { stats: [{effect: 'stat', stat: 'spDefense', stage: -1}, {stat: 'defense', stage: -1}]} }, { name: "ふいうち", power: 70, pp: 5, type: "あく", category: "physical", accuracy: 100, priority: 1, isContact: true}] },
+        Miasmaw: { name: "ミアズマウ", id: "miasmaw", types: ["むし", "ドラゴン"], baseHp: 85, baseAttack: 135, baseDefense: 60, baseSpAttack: 88, baseSpDefense: 105, baseSpeed: 99, ability: "りゅうのあご",evs: { hp: 0, atk: 252, def: 4, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "ようき", moves: [{ name: "りゅうのキバ", power: 100, pp: 10, type: ["ドラゴン","ほのお"], category: "physical", accuracy: 100,isContact: true,isbite: true,secondary: { chance: 100, effect: 'status', status: 'burn' }},{ name: "きゅうけつ", power: 80, pp: 10, type: "むし", category: "physical", accuracy: 100, isContact: true ,isbite: true},{ name: "インファイト", power: 120, pp: 5, type: "かくとう", category: "physical", accuracy: 100, isContact: true, self: { stats: [{effect: 'stat', stat: 'spDefense', stage: -1}, {stat: 'defense', stage: -1}]} }, { name: "りゅうのまい",pp: 20, type: "ドラゴン", category: "status", accuracy: 101 }] },
+        Naviathan: { name: "ナヴィアタン", id: "naviathan", types: ["みず", "はがね"], baseHp: 103, baseAttack: 110, baseDefense: 90, baseSpAttack: 95, baseSpDefense: 65, baseSpeed: 97, ability: "こんじょう",evs: { hp: 4, atk: 252, def: 0, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "ふっとう", power: 80, pp: 10, type: ["みず","ほのお"], category: "physical", accuracy: 100,secondary: { chance: 50, effect: 'status', status: 'burn' }},{name: "アイアンヘッド", type: "はがね", category: "physical", power: 80, pp: 15, accuracy: 100, isContact: true, secondary: {chance: 30, effect: 'flinch'}}, { name: "からげんき", power: 70, pp: 15, type: "ノーマル", category: "physical", accuracy: 100 }, { name: "りゅうのまい",pp: 20, type: "ドラゴン", category: "status", accuracy: 101 }] },
+        Necturna: { name: "ネクターナ", id: "necturna", types: ["くさ", "ゴースト"], baseHp: 64, baseAttack: 85, baseDefense: 100, baseSpAttack: 120, baseSpDefense: 120, baseSpeed: 58, ability: "かれないはな",evs: { hp:0 , atk: 0, def: 0, spa: 252, spd: 4, spe: 252},ai:"aggressive",nature: "", moves: [{ name: "ソウルドレイン", power: 100, pp: 10, type: ["くさ","ゴースト"], category: "special", accuracy:100 },{ name: "れいとうビーム", power: 90, pp: 15, type: "こおり", category: "special", accuracy: 100 ,secondary: { chance: 20, effect: 'status', status: 'freeze' }},{ name: "かげうち", power: 40, pp: 40, type: "ゴースト", category: "physical", accuracy: 100, priority: 1, isContact: true}, { name: "ちょうのまい", type: "むし", pp: 20, category: "status", accuracy: 101 },] },
+        Pajantom: { name: "バジャントム", id: "pajantom", types: ["ドラゴン", "ゴースト"], baseHp: 84, baseAttack: 133, baseDefense: 71, baseSpAttack: 51, baseSpDefense: 111, baseSpeed: 101, ability: "たましいのうろこ",evs: { hp: 0, atk: 252, def: 0, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "シャドースケイル", power: 100, pp: 10, type: ["ゴースト","ドラゴン"], category: "physical", accuracy:100 ,secondary: { chance: 100, effect: 'stat', stat: 'speed', stage: 1, self: true }},{ name: "げきりん", power: 120, pp: 10, type: "ドラゴン", category: "physical", accuracy: 100, isContact: true }, { name: "じしん", power: 100, pp: 10, type: "じめん", category: "physical", accuracy: 100 }, { name: "りゅうのまい",pp: 20, type: "ドラゴン", category: "status", accuracy: 101 }] },
+        Plasmanta: { name: "プラズマンタ", id: "plasmanta", types: ["でんき", "どく"], baseHp: 60, baseAttack: 57, baseDefense: 119, baseSpAttack: 131, baseSpDefense: 98, baseSpeed: 100, ability: "ふゆう",evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252},ai:"aggressive",nature: "れいせい", moves: [{ name: "ポイズンボルト", power:100 , pp: 10, type: ["でんき","どく"], category: "special", accuracy: 100 ,secondary: { chance: 100, effect: 'status', status: 'toxic' } },{ name: "ヘドロウェーブ", power: 95, pp: 10, type: "どく", category: "special", accuracy:100,secondary: { chance: 10, effect: 'status', status: 'poison' } }, { name: "めざめるパワー氷", power: 60, pp: 10, type: "こおり", category: "special", accuracy:100 }, { name: "アクアジェット", power: 40, pp: 30, type: "みず", category: "physical", accuracy: 100, priority: 1, isContact: true }] },
+        Stratagem: { name: "ストラジェム", id: "stratagem", types: ["いわ"], baseHp: 90, baseAttack: 60, baseDefense: 65, baseSpAttack: 120, baseSpDefense: 70, baseSpeed: 130, ability: "ふゆう",evs: { hp: 0, atk: 0, def: 0, spa: 252, spd: 4, spe: 252},ai:"aggressive",nature: "ひかえめ", moves: [{ name: "パレオブラスト", power: 120, pp: 10, type: "いわ", category: "special", accuracy: 100 ,secondary: { chance: 100, effect: 'stat', stat: 'spAttack', stage: 1, self: true }},{ name: "ギガドレイン", power: 75, pp: 10, type: "くさ", category: "special", accuracy: 100 }, { name: "オーバーヒート", power: 130, pp: 5, type: "ほのお", category: "special", accuracy: 90, self: { stats: [{effect: 'stat', stat: 'spAttack', stage: -2}]} },{ name: "しんくうは", power: 40, pp: 30, type: "かくとう", category: "special", accuracy: 100, priority: 1}] },
+        Voodoom: { name: "ヴードゥーム", id: "voodoom", types: ["かくとう", "あく"], baseHp: 90, baseAttack: 130, baseDefense: 80, baseSpAttack: 85, baseSpDefense: 80, baseSpeed: 110, ability: "れいたい",evs: { hp:4 , atk: 252, def: 0, spa: 0, spd: 0, spe: 252},ai:"aggressive",nature: "いじっぱり", moves: [{ name: "めったざし", power: 20, pp: 10, type: ["あく","かくとう"], category: "physical", accuracy: 100 },{ name: "インファイト", power: 120, pp: 5, type: "かくとう", category: "physical", accuracy: 100, isContact: true, self: { stats: [{effect: 'stat', stat: 'spDefense', stage: -1}, {stat: 'defense', stage: -1}]} }, { name: "ふいうち", power: 70, pp: 5, type: "あく", category: "physical", accuracy: 100, priority: 1, isContact: true}, { name: "ビルドアップ",pp: 20, type: "かくとう", category: "status", accuracy: 101 }] },
     };
 
     const typeChart = { ノーマル: { いわ: 0.5, ゴースト: 0, はがね: 0.5 }, ほのお: { ほのお: 0.5, みず: 0.5, くさ: 2, こおり: 2, Icc: 2, むし: 2, いわ: 0.5, ドラゴン: 0.5, はがね: 2 }, みず: { ほのお: 2, みず: 0.5, くさ: 0.5, じめん: 2, いわ: 2, ドラゴン: 0.5 }, でんき: { みず: 2, でんき: 0.5, くさ: 0.5, じめん: 0, ひこう: 2, ドラゴン: 0.5 }, くさ: { ほのお: 0.5, みず: 2, くさ: 0.5, どく: 0.5, じめん: 2, ひこう: 0.5, むし: 0.5, いわ: 2, ドラゴン: 0.5, はがね: 0.5 }, こおり: { ほのお: 0.5, みず: 0.5, くさ: 2, こおり: 0.5, Icc: 0.5,じめん: 2, ひこう: 2, ドラゴン: 2, はがね: 0.5 }, かくとう: { ノーマル: 2, Norma1:2, こおり: 2, Icc: 2, どく: 0.5, ひこう: 0.5, エスパー: 0.5, むし: 0.5, いわ: 2, ゴースト: 0, あく: 2, はがね: 2, フェアリー: 0.5 }, どく: { くさ: 2, どく: 0.5, じめん: 0.5, いわ: 0.5, ゴースト: 0.5, はがね: 0, フェアリー: 2 }, じめん: { ほのお: 2, でんき: 2, くさ: 0.5, どく: 2, ひこう: 0, むし: 0.5, いわ: 2, はがね: 2 }, ひこう: { でんき: 0.5, くさ: 2, かくとう: 2, むし: 2, いわ: 0.5, はがね: 0.5 }, エスパー: { かくとう: 2, どく: 2, エスパー: 0.5, あく: 0, はがね: 0.5 }, むし: { ほのお: 0.5, くさ: 2, かくとう: 0.5, どく: 0.5, ひこう: 0.5, エスパー: 2, ゴースト: 0.5, あく: 2, はがね: 0.5, フェアリー: 0.5 }, いわ: { ほのお: 2, こおり: 2, Icc: 2, かくとう: 0.5, じめん: 0.5, ひこう: 2, むし: 2, はがね: 0.5 }, ゴースト: { ノーマル: 0, Norma1:0, エスパー: 2, ゴースト: 2, あく: 0.5 }, ドラゴン: { ドラゴン: 2, はがね: 0.5, フェアリー: 0 }, あく: { かくとう: 0.5, エスパー: 2, ゴースト: 2, あく: 0.5, フェアリー: 0.5 }, はがね: { ほのお: 0.5, みず: 0.5, でんき: 0.5, こおり: 2, Icc: 2, いわ: 2, はがね: 0.5, フェアリー: 2 }, フェアリー: { ほのお: 0.5, かくとう: 2, どく: 0.5, ドラゴン: 2, あく: 2, はがね: 0.5 }, 神: {ノーマル: 2, ほのお: 2, みず: 2, でんき: 2, くさ: 2, こおり: 2, Icc: 2, かくとう: 2, どく: 2, じめん: 2, ひこう: 2, エスパー: 2, むし: 2, いわ: 2, ゴースト: 2, ドラゴン: 2, あく: 2, はがね: 2, フェアリー: 2, 神: 2 }, Z: {ノーマル: 0, ほのお: 0, みず: 0, でんき: 0, くさ: 0, こおり: 0, Icc: 0, かくとう: 0, どく: 0, じめん: 0, ひこう: 0, エスパー: 0, むし: 0, いわ: 0, ゴースト: 0, ドラゴン: 0, あく: 0, はがね: 0, フェアリー: 0, 神: 0 }};
@@ -2052,6 +2064,68 @@ if (playerPokemon.ability === "しろのいななき") {
         updateStatDisplay(opponentPokemon, document.getElementById('opponent-stat-display'));
     }
 }
+if (playerPokemon.ability === "かたいつぼ") {
+    await showMessage(`じぶんの ${playerPokemon.name} の かたいつぼ！`);
+
+    playerPokemon.statStages.defense++;
+    playerPokemon.statStages.spDefense++;
+
+    await showMessage(
+        `${playerPokemon.name} の ぼうぎょと とくぼうが あがった！`
+    );
+
+    updateStatDisplay(
+        playerPokemon,
+        document.getElementById('player-stat-display')
+    );
+}
+
+if (opponentPokemon.ability === "かたいつぼ") {
+    await showMessage(`あいての ${opponentPokemon.name} の かたいつぼ！`);
+
+    opponentPokemon.statStages.defense++;
+    opponentPokemon.statStages.spDefense++;
+
+    await showMessage(
+        `${opponentPokemon.name} の ぼうぎょと とくぼうが あがった！`
+    );
+
+    updateStatDisplay(
+        opponentPokemon,
+        document.getElementById('opponent-stat-display')
+    );
+}
+if (playerPokemon.ability === "たましいのうろこ") {
+    await showMessage(`じぶんの ${playerPokemon.name} の たましいのうろこ！`);
+
+    playerPokemon.statStages.defense++;
+    playerPokemon.statStages.spDefense++;
+
+    await showMessage(
+        `${playerPokemon.name} の ぼうぎょと とくぼうが あがった！`
+    );
+
+    updateStatDisplay(
+        playerPokemon,
+        document.getElementById('player-stat-display')
+    );
+}
+
+if (opponentPokemon.ability === "たましいのうろこ") {
+    await showMessage(`あいての ${opponentPokemon.name} の たましいのうろこ！`);
+
+    opponentPokemon.statStages.defense++;
+    opponentPokemon.statStages.spDefense++;
+
+    await showMessage(
+        `${opponentPokemon.name} の ぼうぎょと とくぼうが あがった！`
+    );
+
+    updateStatDisplay(
+        opponentPokemon,
+        document.getElementById('opponent-stat-display')
+    );
+}
         await showMessage(
     `${getShownName(playerPokemon)} は どうする？`,
     500
@@ -2208,8 +2282,9 @@ if (!playerPokemon.pendingMega) {
 
         const isDisabled = move.currentPp === 0;
 
-let displayType = move.type;
-
+let displayType = Array.isArray(move.type)
+    ? move.type[0]
+    : move.type;
 // スカイスキン
 if (
     playerPokemon.ability === "スカイスキン" &&
@@ -2351,8 +2426,9 @@ btn.onmouseout = () => {
 
     function getMoveTooltipContent(move) {
 
-    let displayType = move.type;
-
+let displayType = Array.isArray(move.type)
+    ? move.type[0]
+    : move.type;
     if (
         playerPokemon.ability === "スカイスキン" &&
         move.type === "ノーマル" &&
@@ -2431,6 +2507,7 @@ const effectiveness =
             case 'わるだくみ': return '自分の とくこうを 2段階 あげる。';
             case 'こうそくいどう': return '自分の すばやさを 2段階と あげる。';
             case 'ちょうのまい': return '自分の とくこう とくぼう すばやさを 1段階ずつ あげる。';
+            case 'しょうりのまい': return '自分の こうげき ぼうぎょ すばやさを 1段階ずつ あげる。';
             case 'のろい': return '自分の すばやさを 1段階 さげ,こうげき ぼうぎょを 1段階ずつ あげる。';
             case 'おにび': return '相手を やけど状態にする。';
             case 'ねむりごな': return '相手を ねむり状態にする。';
@@ -2454,6 +2531,7 @@ const effectiveness =
     function generateAttackMoveDescription(moveName) {
     switch(moveName) {
         case 'からげんき': return '自分が 状態異常のとき 与えるダメージが 2倍に なる。';
+        case 'ふっとう': return 'ほのおタイプも含む。自分が やけど状態のとき 与えるダメージが 2倍に なる。';
         case 'おんがえし': return 'おんがえしを 指示してさせるという 不思議な技。';
         case 'ギガドレイン': return '与えた ダメージの 半分の HPを 回復 できる。';
         case 'インファイト': return '攻撃後に 自分の ぼうぎょ と とくぼうが 1段階 さがる。';
@@ -2482,6 +2560,16 @@ const effectiveness =
         case 'みずしゅりけん': return '2〜5回 攻撃する。';
         case 'おはかまいり': return 'こんな技 あってはいけない。';
         case 'ドゲザン': return '情けない技';
+        case 'ミイラしばり': return 'ゴーストタイプも含む。バインドわざ';
+        case 'ポイズンキラー': return 'いわタイプも含む。';
+        case 'てんびんのさいだん': return 'エスパータイプも含む。相手のHP割合と自分のHP割合を比べて、<br> 自分のHP割合が低かったら威力が上がる。';
+        case 'シャドーストライク': return 'かくとうタイプも含む。';
+        case 'ソウルドレイン': return 'ゴーストタイプも含む。与えたダメージの3/4回復する。';
+        case 'シャドースケイル': return 'ドラゴンタイプも含む。';
+        case 'ポイズンボルト': return 'どくタイプも含む。';
+        case 'でんじこう': return 'でんきタイプも含む。優先度+2';
+        case 'めったざし': return 'かくとうタイプも含む。';
+        case 'りゅうのキバ': return 'ほのおタイプも含む。';
         default: return 'こうげきわざ';
     }
 }
@@ -2807,6 +2895,8 @@ switch (move.name) {
     // 無効
     if (
         (move.type === 'じめん' && playerPokemon.ability === 'ふゆう') ||
+        (move.type === 'かくとう' && playerPokemon.ability === 'れいたい') ||
+        (move.type === 'でんき' && playerPokemon.ability === 'コンデンサー') ||
         (move.type === 'でんき' && playerPokemon.ability === 'ちくでん')
     ) {
         score = 0;
@@ -3555,6 +3645,95 @@ if (defender.currentHp <= 0) {
 }
     return false;
 }
+if (move.name === 'めったざし') {
+    let hits;
+
+    // スキルリンク
+    if (attacker.ability === 'スキルリンク') {
+        hits = 10;
+    } else {
+        const rand = Math.random();
+        if (rand < 0.2) hits = 6;
+        else if (rand < 0.4) hits = 7;
+        else if (rand < 0.6) hits = 8;
+        else if (rand < 0.8) hits = 9;
+        else hits = 10;
+    }
+
+    await showMessage(`${attacker.name} の めったざし！`);
+
+    let totalHits = 0;
+
+for (let i = 0; i < hits; i++) {
+    if (defender.currentHp <= 0) break;
+
+    const { damage } = calculateDamage(move, attacker, defender);
+
+    const result = await applyDamage(attacker, defender, damage, move, defenderUI);
+
+if (!result) break; // まもる用
+totalHits++;
+if (attacker.currentHp <= 0) {
+    if (await checkFainted(attacker, attacker === playerPokemon)) return true;
+    return true;
+}
+
+if (defender.currentHp <= 0) {
+    if (await checkFainted(defender, defender === playerPokemon)) return true;
+    break;
+}
+
+    defender.lastDamageTaken = damage;
+    defender.lastDamageCategory = move.category;
+
+    // 🔥 おうじゃのしるし
+    if (
+        attacker.item?.name === 'おうじゃのしるし' &&
+        move.category !== 'status'
+    ) {
+        if (Math.random() < 0.2) {
+            defender.isFlinched = true;
+        }
+    }
+
+    const isLastHit = i === hits - 1;
+    const delay = isLastHit ? 1 : 1000;
+    await new Promise(r => setTimeout(r, delay));
+}
+
+    await showMessage(`${totalHits}かい あたった！`);
+
+    const isPlayerDefender = defender === playerPokemon;
+
+if (defender.currentHp <= 0) {
+    const isPlayerDefender = defender === playerPokemon;
+    if (await checkFainted(defender, isPlayerDefender)) return true;
+}
+if (defender.currentHp <= 0) {
+    const isPlayerDefender = defender === playerPokemon;
+    if (await checkFainted(defender, isPlayerDefender)) return true;
+}
+attacker.statStages.attack = Math.min(
+    6,
+    attacker.statStages.attack + 1
+);
+
+await showMessage(
+    `${attacker.name} の こうげきが あがった！`
+);
+
+updateStatDisplay(
+    playerPokemon,
+    document.getElementById('player-stat-display')
+);
+
+updateStatDisplay(
+    opponentPokemon,
+    document.getElementById('opponent-stat-display')
+);
+
+    return false;
+}
 if (move.name === 'ドラゴンアロー') {
     let hits;
 
@@ -4009,7 +4188,10 @@ if (defender.hasSubstitute && !move.isSound) {
             defender.lastDamageCategory = move.category;
             const hitCount =
 (
-    attacker.ability === "おやこあい" &&
+    (
+        attacker.ability === "おやこあい" ||
+        attacker.ability === "ふたつのたましい"
+    ) &&
     move.category !== "status"
 )
 ? 2
@@ -4024,7 +4206,11 @@ for(let hit = 0; hit < hitCount; hit++){
 
     if(hit === 1){
         await showMessage(
-            `${attacker.name} の おやこあい！`
+            `${attacker.name} の ${
+                attacker.ability === "おやこあい"
+                    ? "おやこあい"
+                    : "ふたつのたましい"
+            }！`
         );
     }
     
@@ -4091,6 +4277,10 @@ for(let hit = 0; hit < hitCount; hit++){
 } else if (defender.ability === 'きずなへんげ' && hpBeforeHit === defender.maxHp) {
                 defender.currentHp = 1;
                 await showMessage(`${defender.name} は きずなのちからで もちこたえた！`);
+                updateHpBars();   
+             } else if (defender.ability === 'かれないはな' && hpBeforeHit === defender.maxHp) {
+                defender.currentHp = 1;
+                await showMessage(`${defender.name} は まだかれない！`);
                 updateHpBars();   
              } else if (defender.ability === 'トレーニング' && hpBeforeHit === defender.maxHp) {
                 defender.currentHp = 1;
@@ -4546,6 +4736,12 @@ if (move.name === "マグマストーム" && defender.currentHp > 0) {
 
     await showMessage(`${defender.name} は マグマストームに しばりつけられた！`);
 }
+if (move.name === "ミイラしばり" && defender.currentHp > 0) {
+
+    defender.mummyTurns = 6; // 4ターン継続（公式準拠）
+
+    await showMessage(`${defender.name} は ミイラに しばりつけられた！`);
+}
 
         
         const recoilMoves = ["フレアドライブ", "ワイルドボルト", "ブレイブバード", "もろはのずつき","すてみタックル","ボルテッカー","ウェーブタックル"];
@@ -4605,6 +4801,21 @@ if (
         attacker.status = 'burn';
         await showMessage(`${defender.name} の ほのおのからだ！`);
         await showMessage(`やけどしてしまった！`);
+        updateStatusMarkers();
+    }
+}
+
+if (
+    move.isContact &&
+    defender.ability === 'どくのからだ' &&
+    !defender.hasSubstitute &&                  // みがわり貫通なし
+    attacker.status === null &&                 // すでに状態異常ならNG
+    !attacker.types.includes("どく")        // 電気タイプは麻痺しない
+) {
+    if (Math.random() < 0.33) { // 30%
+        attacker.status = 'toxic';
+        await showMessage(`${defender.name} の どくのからだ！`);
+        await showMessage(`もうどくを浴びてしまった！`);
         updateStatusMarkers();
     }
 }
@@ -4763,6 +4974,7 @@ if (
             case 'わるだくみ': attacker.statStages.spAttack = Math.min(6, attacker.statStages.spAttack + 2); message = `${attacker.name} の とくこうが ぐーんと あがった！`; break;
             case 'こうそくいどう': attacker.statStages.speed = Math.min(6, attacker.statStages.speed + 2); message = `${attacker.name} の すばやさが ぐーんと あがった！`; break;
             case 'ちょうのまい': attacker.statStages.spAttack = Math.min(6, attacker.statStages.spAttack + 1); attacker.statStages.spDefense = Math.min(6, attacker.statStages.spDefense + 1); attacker.statStages.speed = Math.min(6, attacker.statStages.speed + 1); message = `${attacker.name} の とくこうと とくぼうと すばやさが あがった！`; break;
+            case 'しょうりのまい': attacker.statStages.attack = Math.min(6, attacker.statStages.attack + 1); attacker.statStages.defense = Math.min(6, attacker.statStages.defense + 1); attacker.statStages.speed = Math.min(6, attacker.statStages.speed + 1); message = `${attacker.name} の こうげきと ぼうぎょと すばやさが あがった！`; break;
             case 'からをやぶる': attacker.statStages.attack = Math.min(6, attacker.statStages.attack + 2); attacker.statStages.spAttack = Math.min(6, attacker.statStages.spAttack + 2); attacker.statStages.speed = Math.min(6, attacker.statStages.speed + 2); attacker.statStages.defense = Math.max(-6, attacker.statStages.defense - 1); attacker.statStages.spDefense = Math.max(-6, attacker.statStages.spDefense - 1);  message = `${attacker.name} の こうげきと とくこうと すばやさが ぐーんとあがって ぼうぎょと とくぼうが さがった！`; break;
             case 'のろい': attacker.statStages.attack = Math.min(6, attacker.statStages.attack + 1); attacker.statStages.defense = Math.min(6, attacker.statStages.defense + 1); attacker.statStages.speed = Math.max(-6, attacker.statStages.speed - 1); message = `${attacker.name} の すばやさが さがり こうげきと ぼうぎょが あがった！`; break;
             case 'おにび': if (!defender.types.includes("ほのお") && defender.status === null) { defender.status = 'burn'; message = `あいて の ${defender.name} は やけどを おった！`; } else { message = `しかし うまくきまらなかった！`; } break;
@@ -5068,7 +5280,6 @@ if (playerPokemon.magmastormTurns > 0 && playerPokemon.currentHp > 0) {
         await showMessage(`マグマストームの こうかが きれた！`);
     }
 }
-
 // ⭐ マグマストーム継続ダメージ（相手）
 if (opponentPokemon.magmastormTurns > 0 && opponentPokemon.currentHp > 0) {
     opponentPokemon.currentHp = Math.max(0, opponentPokemon.currentHp - Math.floor(opponentPokemon.maxHp / 8));
@@ -5080,6 +5291,33 @@ if (opponentPokemon.magmastormTurns > 0 && opponentPokemon.currentHp > 0) {
 
     if (opponentPokemon.magmastormTurns === 0) {
         await showMessage(`マグマストームの こうかが きれた！`);
+    }
+}
+        // ⭐ マグマストーム継続ダメージ（プレイヤー）
+if (playerPokemon.mummyTurns > 0 && playerPokemon.currentHp > 0) {
+    playerPokemon.currentHp = Math.max(0, playerPokemon.currentHp - Math.floor(playerPokemon.maxHp / 6));
+    playerPokemon.mummyTurns--;
+
+    await showMessage(`${playerPokemon.name} は ミイラのしばりの ダメージを うけた！`);
+    updateHpBars();
+    if (await checkFainted(playerPokemon, true)) return true;
+
+    if (playerPokemon.magmastormTurns === 0) {
+        await showMessage(`ミイラのしばりの こうかが きれた！`);
+    }
+}
+
+// ⭐ マグマストーム継続ダメージ（相手）
+if (opponentPokemon.mummyTurns > 0 && opponentPokemon.currentHp > 0) {
+    opponentPokemon.currentHp = Math.max(0, opponentPokemon.currentHp - Math.floor(opponentPokemon.maxHp / 6));
+    opponentPokemon.mummyTurns--;
+
+    await showMessage(`あいての ${opponentPokemon.name} は ミイラのしばりの ダメージを うけた！`);
+    updateHpBars();
+    if (await checkFainted(opponentPokemon, false)) return true;
+
+    if (opponentPokemon.magmastormTurns === 0) {
+        await showMessage(`ミイラのしばりの こうかが きれた！`);
     }
 }
         if (await handleStatusDamage(playerPokemon, true)) return true;
@@ -5281,7 +5519,11 @@ async function applyGeigekiScopeOnEnter(pokemon) {
     }
     
     function calculateDamage(move, attacker, defender) {
-      let attackType = move.dynamicAppliedType ? move.dynamicAppliedType : move.type;
+      let attackTypes = move.dynamicAppliedType
+    ? [move.dynamicAppliedType]
+    : Array.isArray(move.type)
+        ? move.type
+        : [move.type];
 
 // スカイスキン
 if (
@@ -5337,8 +5579,10 @@ const defStageFix = (stage) =>
     };
 }
 
-        if (defender.ability === 'ふゆう' && move.type === 'じめん') return { damage: 0, effectivenessMessage: `${defender.name} の ふゆう で こうかがない！` };
+        if (defender.ability === 'ふゆう' && move.type === 'じめん') return { damage: 0, effectivenessMessage: `${defender.name} の ふゆう` };
+        if (defender.ability === 'れいたい' && move.type === 'かくとう') return { damage: 0, effectivenessMessage: `${defender.name} の れいたい` };
         if (defender.ability === 'ちくでん' && move.type === 'でんき') return { damage: 0, healing: Math.floor(attacker.maxHp / 4) };
+        if (defender.ability === 'コンデンサー' && move.type === 'でんき') return { damage: 0, healing: Math.floor(attacker.maxHp / 2) };
 
         let attackStat, defenseStat;
         if (move.category === 'physical') {
@@ -5409,9 +5653,33 @@ if (defender.ability === "わざわいのうつわ") {
 
         let movePower = move.power;
         if ( move.name === "からげんき" && ( attacker.status === "burn" ||attacker.status === "poison" ||attacker.status === "toxic" ||attacker.status === "paralysis" )) { movePower *= 2; }
+        if ( move.name === "ふっとう" && ( attacker.status === "burn" )) { movePower *= 2; }
+        if (move.name === "てんびんのさいだん") {
+
+    const attackerHpRate =
+        attacker.currentHp / attacker.maxHp;
+
+    const defenderHpRate =
+        defender.currentHp / defender.maxHp;
+
+    // 自分のHP割合が相手より低いほど威力アップ
+    if (attackerHpRate < defenderHpRate) {
+
+        const difference =
+            defenderHpRate - attackerHpRate;
+
+        // HP割合の差 × 100 を威力に加算
+        movePower += Math.floor(difference * 100);
+    }
+}
         if ((attacker.ability === 'もうか' && attacker.currentHp / attacker.maxHp <= 1/3 && move.type === 'ほのお') || (attacker.ability === 'げきりゅう' && attacker.currentHp / attacker.maxHp <= 1/3 && move.type === 'みず') || (attacker.ability === 'しんりょく' && attacker.currentHp / attacker.maxHp <= 1/3 && move.type === 'くさ') || (attacker.ability === 'むしのしらせ' && attacker.currentHp / attacker.maxHp <= 1/3 && move.type === 'むし')) movePower *= 1.5;
         if (attacker.ability === 'テクニシャン' && move.power <= 60) movePower *= 1.5;
+        if (attacker.ability === 'コンデンサー' && move.power <= 200) { movePower *= 1.5;}
+        if (attacker.ability === 'コンデンサー' &&((Array.isArray(move.type) && move.type.includes('でんき')) ||move.type === 'でんき')) {movePower *= 1.5;}
+        if (attacker.ability === 'コンデンサー' &&((Array.isArray(move.type) && move.type.includes('はがね')) ||move.type === 'はがね')) {movePower *= 1.5;}
         if (attacker.ability === 'てつのこぶし' && move.isPunch) movePower *= 1.2;
+        if (attacker.ability === 'りゅうのあご' &&((Array.isArray(move.type) && move.type.includes('ドラゴン')) ||move.type === 'ドラゴン')) {movePower *= 1.5;}
+        if (attacker.ability === 'りゅうのあご' &&((Array.isArray(move.type) && move.type.includes('ほのお')) ||move.type === 'ほのお')) {movePower *= 1.5;}
         if (attacker.item && attacker.item.name === 'ちからのハチマキ' && move.category === 'physical') movePower *= 1.5;
         if (attacker.item && attacker.item.name === 'ものしりメガネ' && move.category === 'special') movePower *= 1.5;
         if (attacker.item && attacker.item.name === 'なにも持たせない' && move.power <= 2000) movePower *= 1;
@@ -5425,6 +5693,7 @@ if (defender.ability === "わざわいのうつわ") {
         if (attacker.ability === 'きれあじ' && move.category && move.power <= 2000) movePower *= 1.5;
         if (attacker.ability === 'ブレインフォース' && move.category && move.power <= 2000) movePower *= 1.25;
         if (attacker.ability === 'アナライズ' && move.category === 'special') movePower *= 1.3;
+        if (attacker.ability === 'りゅうのあご' && move.type === 'ドラゴン') movePower *= 1.5;
         if (attacker.ability === 'マルチタイプ' && move.power <= 70) movePower *= 1.5;
         if (attacker.ability === "スカイスキン" && move.type === "ノーマル" && move.category !== "status") {movePower *= 1.2;}
 
@@ -5465,15 +5734,19 @@ if (field.type === 'psyco') {
 
         let damage = Math.floor(Math.floor(Math.floor(2 * level / 5 + 2) * movePower * attackStat / defenseStat) / 50) + 2;
 
-        if (attacker.types.includes(attackType)) {
-            const stabMultiplier = attacker.ability === 'てきおうりょく' ? 2 : 1.5;
-            damage = Math.floor(damage * stabMultiplier);
-        }
+        if (attackTypes.some(type => attacker.types.includes(type))) {
+    const stabMultiplier = attacker.ability === 'てきおうりょく' ? 2 : 1.5;
+    damage = Math.floor(damage * stabMultiplier);
+}
 
         if (defender.ability === 'マルチスケイル' && defender.currentHp === defender.maxHp && !defender.hasSubstitute) damage *= 0.5;
         if (defender.ability === 'あついしぼう' && (move.type === 'ほのお' || move.type === 'こおり')) damage *= 0.5;
         
-       const typeMultiplier = calculateTypeEffectiveness(attackType, defender.types);
+       const typeMultipliers = attackTypes.map(type =>
+    calculateTypeEffectiveness(type, defender.types)
+);
+
+const typeMultiplier = Math.max(...typeMultipliers);
        let actualTypeMultiplier = typeMultiplier;
 
 if (
@@ -5506,9 +5779,23 @@ if (
     damage = Math.floor(damage * 0.5);
 }
         
-        let healing = 0;
-if (move.name === "ギガドレイン")
+let healing = 0;
+
+if (move.name === "ギガドレイン") {
     healing = Math.floor(damage / 2);
+}
+
+if (move.name === "きゅうけつ") {
+    healing = Math.floor(damage / 2);
+}
+
+if (move.name === "ドレインパンチ") {
+    healing = Math.floor(damage / 2);
+}
+
+if (move.name === "ソウルドレイン") {
+    healing = Math.floor(damage * 3 / 4);
+}
 
 const finalDamage =
     Math.max(typeMultiplier > 0 ? 1 : 0, damage);
