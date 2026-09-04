@@ -5583,7 +5583,7 @@ const defStageFix = (stage) =>
         if (defender.ability === 'ふゆう' && move.type === 'じめん') return { damage: 0, effectivenessMessage: `${defender.name} の ふゆう` };
         if (defender.ability === 'れいたい' && move.type === 'かくとう') return { damage: 0, effectivenessMessage: `${defender.name} の れいたい` };
         if (defender.ability === 'ちくでん' && move.type === 'でんき') return { damage: 0, healing: Math.floor(attacker.maxHp / 4) };
-        if (defender.ability === 'コンデンサー' && move.type === 'でんき') return { damage: 0, healing: Math.floor(attacker.maxHp / 2) };
+        if (defender.ability === 'コンデンサー' && move.type === 'でんき') return { damage: 0, effectivenessMessage: `${defender.name} の コンデンサー` };
 
         let attackStat, defenseStat;
         if (move.category === 'physical') {
